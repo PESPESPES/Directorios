@@ -11,6 +11,10 @@ using static Directorios.Eventos.ErroresDatos;
 
 namespace Directorios
 {
+    /// <summary>
+    /// directorios
+    /// </summary>
+    /// <seealso cref="System.IObserver{Directorios.Errores}" />
     public class Directorios: IObserver<Errores>
     {
         private static List<IObserver<Errores>> observers;
